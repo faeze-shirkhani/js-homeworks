@@ -20,5 +20,5 @@ if (person === "Han") {
 } else if (person === "Leia") {
   console.log("sister");
 } else if (person === "R2D2") {
-  consolelog("droid");
+  console.log("droid");
 }

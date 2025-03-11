@@ -5,7 +5,7 @@
 // todo-3:show the number in the console log if the variable was greater than 10
 
 let number = 5;
-let confirmation = num1 + 5;
+let confirmation = number + 5;
 
 if (confirmation > 10) {
   console.log("it's greater than 10");
