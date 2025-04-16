@@ -4,7 +4,7 @@
 const array = ['0', null, '', 0];
 function isTruthy(num) {
   // write your code here
-  return num.some((x) => x == 0)
+  return num.some((x) => x )
 }
 
 // !  Answer:

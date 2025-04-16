@@ -12,7 +12,7 @@ const brands = [
   'sony',
 ];
 function brandsSearch(arr, query) {
-  return arr.filter((x) => x.includes(query)); //  to be completed
+  return arr.filter((x) => x.startsWith(query)); //  to be completed
 }
 
 console.log(brandsSearch(brands, 'a')); // result : [ 'asus', 'apple', 'acer' ]
