@@ -4,8 +4,13 @@ but the element at the given index(second parameter of the function) should be r
 The function must NOT change the original array, arr.
 */
 
+// function remove(arr, index) {
+//   let result = arr.filter((x) => arr.indexOf(x) !== index);
+//   return result
+// }
+
 function remove(arr, index) {
-  let result = arr.filter((x) => arr.indexOf(x) !== index);
+  let result = arr.filter((x, i) => i !== index);
   return result
 }
 
