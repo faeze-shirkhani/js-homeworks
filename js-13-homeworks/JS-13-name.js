@@ -147,34 +147,16 @@ const names = [
 ];
 //! Answer:
 
-// function sayWord(arr) {
-//   let userInfo = prompt("Enter a letter");
-//   if (userInfo.length > 1) {
-//     return alert("enter only one of the alphabets");
-//   }
-//   if (!/^[A-Za-z]+$/.test(userInfo)) {
-//     return alert("enter only alphabets");
-//   }
-//   let find = arr.filter((element) =>
-//     element.startsWith(userInfo.toUpperCase())
-//   );
-//   if (find.length === 0) {
-//     return "nothing found";
-//   }else
-//   return find;
-// }
-
-// console.log(sayWord(names));
-
 function ask() {
   let input = prompt("Enter a letter");
 
-  if (!input > "A" && !input < "Z") {
-    alert("enter only alphabets!");
-    return ask(); // call itself again
+  if (input.length !== 1) {
+    alert("Enter only one letter!");
+    return ask();
   }
-  if (input.length > 1) {
-    alert("enter only one of the alphabets");
+
+  if (!/^[a-zA-Z]$/.test(input)) {
+    alert("Enter only alphabets!");
     return ask();
   }
 
