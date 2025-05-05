@@ -5,11 +5,6 @@
 let spanTags = document.querySelectorAll("span");
 
 spanTags.forEach((element) => {
-  if (element.classList.contains("blue")) {
-    element.classList.remove("blue");
-    element.classList.add("purple");
-  } else if (element.classList.contains("purple")) {
-    element.classList.remove("purple");
-    element.classList.add("blue");
-  }
+  element.classList.toggle("blue")
+  element.classList.toggle("purple")
 });

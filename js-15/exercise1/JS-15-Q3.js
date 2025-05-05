@@ -21,4 +21,5 @@ navbarItem.forEach((text) => {
   ulEl.append(li);
 
   li.style.margin = "0 1rem";
+  li.style.cursor = "pointer";
 });
